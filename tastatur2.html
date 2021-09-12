@@ -1,0 +1,372 @@
+<!--
+    Tastaturbefehle
+
+    Hier können Tastenbefehle und Befehle ohne Tastenkombination (F1) ausprobiert werden.
+    An manchen Stellen empfehle ich Alternativ-Tastaturbelegungen.
+-->
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- AUFGABE 9: Mit Ctrl+Shift+O und "p#test" wieder nach unten in das entsprechende Tag mit ID "test" springen -->
+</head>
+
+<body>
+    <!--
+                                                            [gute Ersatzbelegung]
+        Add Cursor Above            Ctrl+Alt+UpArrow        Alt+Shift+PageUp
+        Add Cursor Below            Ctrl+Alt+DownArrow      Alt+Shift+PageDown
+
+        AUFGABE 1:
+        Nach dem 1 viele Cursor (nach oben oder unten) erstellen und dann in 2 ändern. 
+        [Auch gute Tastenkombination: Alt+Shift+Bild hoch/runter)]
+    -->
+
+    Es gibt 1 Richtungen um einen weiteren Cursor zu erstellen.
+    Es gibt 1 Richtungen um einen weiteren Cursor zu erstellen.
+    Es gibt 1 Richtungen um einen weiteren Cursor zu erstellen.
+    Es gibt 1 Richtungen um einen weiteren Cursor zu erstellen.
+    Es gibt 1 Richtungen um einen weiteren Cursor zu erstellen.
+    Es gibt 1 Richtungen um einen weiteren Cursor zu erstellen.
+    Es gibt 1 Richtungen um einen weiteren Cursor zu erstellen.
+
+    <!--
+        --------------------------------------------------------------------------------------------
+                                                            [gute Ersatzbelegung]
+        Cursor Undo                 Ctrl+U                  Alt+Shift+Entf
+        Find Next Selection         Ctrl+D                  Alt+Shift+Einfg
+        Add Cursor (Mausklick)      Alt+Mausklick
+        Add Cursor to Line Ends     Shift+Alt+I             Alt+Shift+Ende
+
+        AUFGABE 2:
+        Cursor mit gedrückter Alt+Taste und Linksklick neben allen 1 erstellen.
+        Ab und zu mal verklicken und mit Ctrl+U Cursor wieder entfernen.
+        Am Ende alle 1 durch 3 ersetzen.
+
+        AUFGABE 3:
+        Anschließend mit Esc die Cursor entfernen. Die erste 3 markieren und mit
+        Ctrl+D die anderen Vorkommen der 3 (8 mal, also 7 weitere) markieren.
+        Diese durch 4 ersetzen.
+
+        AUFGABE 4:
+        Ab irgendwo in Zeile 1 (Ab und zu...) bis irgendwo in die letzte Zeile (In dieser...) markieren.
+        Shift+Alt+I drücken (erstellt an jeder markierten Zeile am Ende einen Cursor).
+        "-Zeichen eingeben, Pos1 drücken und noch ein "-Zeichen, schon steht jede Zeile in "..."
+    -->
+
+    Ab und zu ist die 1 in der Mitte der Zeile.
+    Nr. 1 steht hier am Anfang der Zeile.
+    Wenn die 1 wieder woanders steht, muss man dahin klicken.
+    Die Anzahl der erhaltenenen Pakete ist: 1
+    In dieser Zeile steht die 1 nicht nur 1 mal sondern 3 mal die 1.
+
+    <!--
+    --------------------------------------------------------------------------------------------
+    Expand Selection                Shift+Alt+RightArrow
+    Format Selection                Ctrl+K Ctrl+F
+
+    AUFGABE 5:
+    Irgendwo innerhalb der <div>-Tags klicken.
+    Markierung erweitern mit Shift+Alt+RightArrow (mehrmals drücken, bis zum </div> markiert ist).
+
+    Anschließend auf das "hier" im <a href...></a> klicken.
+    Wieder mehrmals Shift+Alt+RightArrow klicken. Hier kann man gut sehen, das sich die Markierung
+    auch nach oben erweitert (immer vom öffnenden Tag bis zu schließenden Tag).
+
+    AUFGABE 6:
+    Sobald alles (von <div> bis </div>) markiert ist, mit Shift+Tag den Text ganz nach Links
+    verschieben (alles in einer Zeile, untereinander).
+
+    Mit Ctrl+K Ctrl+F den falsch formatierten Textbereich wieder korrekt formatieren.
+
+    --------------------------------------------------------------------------------------------
+    Set Selection Anchor            Ctrl+K Ctrl+B
+    Go to Selection Anchor
+    Select from Anchor to Cursor    Ctrl+K Ctrl+K
+    Cancel Selection Anchor         Escape
+
+    AUFGABE 7:
+    An das Ende von </li> des letzten (Eintrag 4) Eintrags klicken.
+    Diese Position als Anker markieren (Ctrl+K Ctrl+B)
+    Irgendwo andere hinklicken (gerne auch irgendwohin scrollen)
+    F1 >Go to Selection Anchor   aufrufen.
+        Der Cursor ist nun wieder am Ende des </li>, jedoch wird die Stelle nicht angezeigt.
+        Erst wenn etwas eingegeben wird (z.B. ein Space).
+    
+    Nun zum ersten <li> (Eintrag 1) scrollen und vor dem <li> klicken/Cursor setzen.
+    Nun alles von der Anker-Position (</li> von Eintrag 4) bis zur aktuellen Cursor-Position
+    (<li> von Eintrag 1) mit Ctrl+K Ctrl+K markieren.
+
+    Damit kann man leicht von einer bis zu einer anderen, entfernten Stelle markieren.
+    Oder wieder zu der markierten Stelle zurück springen.
+
+    Markierte Anker-Position mit Esc entfernen.
+
+    --------------------------------------------------------------------------------------------
+    Go to Last Edit Location        Ctrl+K Ctrl+Q
+    Go to Line/Column               Ctrl+G
+
+    AUFGABE 8:
+    Bei Eintrag 3 das x entfernen.
+    An das Ende des Dokuments scrollen und irgendwohin klicken.
+
+    Mit Ctrl+K Ctrl+Q wieder dorthin springen, wo die letzte Änderung (entferntes x) vorgenommen
+    wurde.
+
+    Nun in die Zeile 13, Spalte 12 mit Strg+G und dann 13,12 eingeben. Dort den Titel der Seite
+    ändern.
+    -->
+
+    <div>
+        <ul>
+            <li>
+                <p>Eintrag 1</p>
+                <br>
+            </li>
+            <li>
+                <p id="test">Eintrag 2</p>
+                <br>
+                <a href="">Dummy Links, hier rein klicken</a>
+            </li>
+            <li>
+                <p>Eintrag 3x</p>
+                <br>
+            </li>
+            <li>
+                <p>Eintrag 4</p>
+                <br>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!--
+    --------------------------------------------------------------------------------------------
+    Emmet: Wrap with Abbreviation
+    Emmet: Wrap Individual Lines with Abbreviation
+    Emmet: Remove Tag
+    Emmet: Evaluate Math Expression
+
+    AUFGABE 10:
+    Den ersten <ul>-Block komplett markieren (von < bei <ul> bis > bei </ul>).
+    F1 >Emmet: Wrap with Abbreviation   auswählen
+    div    eingeben. Return. Schon ist der Bereich in einem <div>-Block.
+
+    Nun das gleiche mit dem zweiten <ul>-Block. Jedoch hier
+    F1 >Emmet: Wrap Individual Lines with Abbreviation
+    Wieder div eingeben und Return drücken. Hier wird das <div> aber nicht in einer extra Zeile
+    erstellt.
+    
+    AUFGABE 11:
+    Im zweiten <ul>, beim Bilder-Menüeintrag den Cursor zwischen < und a (vom <a href=...> setzen).
+    Mit F1 >Emmet: Remote Tag den <a...></a>-Tag komplett entfernen.
+
+    AUFGABE 12:
+    Unter den <ul>'s die Formel nach dem : (rechts) markieren.
+    F1 >Emmet: Evaluate Math Expression   auswählen. Die Formel wird berechnet und durch das Ergebnis
+        ersetzt.
+    
+    --------------------------------------------------------------------------------------------
+    Sort Lines Ascending
+    Join Lines
+
+    AUFGABE 13:
+    Von Spalte 1 bis Spalte 7 alles markieren. Man beachte das die Reihenfolge nicht stimmt!
+    F1 >Sort Lines Ascending   auswählen.
+    
+    Danach stimmt die Reihenfolge. Die Markierung belassen (oder Spalte 1...Spalte 7 markieren)
+    F1 >Join Lines   auswählen.
+
+    Nun befinden sich alle "Spalten" in einer Zeile.
+-->
+
+    <ul>
+        <li id="menuitem1">Links</li>
+        <li id="menuitem2">Bilder</li>
+        <li id="menuitem3">Impressum</li>
+    </ul>
+
+    <ul>
+        <li id="menueintrag1">Links</li>
+        <a href="www.google.de"></a>
+        <li id="menueintrag2">Bilder</li></a>
+        <li id="menueintrag3">Impressum</li>
+    </ul>
+    <br />
+    Das Ergebnis von 5*(7+3) lautet: 5*(7+3)
+    <br />
+    Spalte 1<br />
+    Spalte 4<br />
+    Spalte 3<br />
+    Spalte 2<br />
+    Spalte 6<br />
+    Spalte 5<br />
+    Spalte 7<br />
+
+    <!--
+    --------------------------------------------------------------------------------------------
+    Insert Line Above                   Ctrl+Shift+Enter
+    Insert Line Below                   Ctrl+Enter
+
+    Move Line Down                      Alt+DownArrow
+    Move Line Up                        Alt+UpArrow
+
+    AUFGABE 14:
+    Bei Zeile 04 irgendwo mitten in die Zeile klicken (Cursor positionieren)
+    Mit Ctrl+Enter eine neue Zeile einfügen.
+
+    Mit Enter alleine würde der Text rechts vom Cursor umgebrochen werden. Mit Ctrl+Enter kann
+    immer eine leer Zeile erstellt werden.
+
+    Mit Ctrl+Shift+Enter wird eine Zeile VOR der aktuellen Zeile erstellt.
+
+    AUFGABE 15:
+    Irgendwo in Zeile 08 (kommt nach 09!) klicken.
+    Mit Alt+UpArrow (Cursor hoch) diese Zeile um eine Zeile nach oben verschieben.
+
+    
+-->
+
+    01Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae voluptas doloremque nisi? Ea perferendis
+    02obcaecati id sequi similique dicta illum molestiae. Molestias beatae nesciunt ratione quas officia doloremque
+    03fugiat quasi.
+    04Quas iste dignissimos rem quae optio fugiat accusamus officiis dolores quia adipisci cupiditate, recusandae
+    05ratione? Ducimus praesentium tenetur consequuntur dignissimos! Ea corporis hic officiis nobis placeat numquam
+    06temporibus delectus rem.
+    07Perspiciatis, minima in! Optio fuga adipisci repudiandae reiciendis explicabo et, dolore officia ad hic
+    09Vero, sunt? Illum beatae esse ad consequuntur odio rem magnam quo unde velit magni provident, architecto
+    08iste, amet id sed ullam deleniti illum quidem. Sapiente excepturi doloremque est, maxime id quae debitis?
+    10laudantium praesentium labore ex deleniti, reprehenderit dolore iusto pariatur eius officia explicabo, ullam
+    11minima.
+    12Saepe fugiat id placeat magnam nisi libero, reiciendis provident repellendus voluptatum aliquid numquam
+    13esse aliquam quasi velit! A accusamus illo dignissimos, quisquam provident nobis ad! Soluta, in voluptas.
+    14Impedit, maxime.
+
+    <!--
+    --------------------------------------------------------------------------------------------
+    Fold                                Ctrl+Shift+ß
+    Unfold                              Ctrl+Shift+´
+    Toggle Fold                         Ctrl+K Ctrl+L
+    Fold All                            Ctrl+K Ctrl+0
+    Unfold All                          Ctrl+K Ctrl+J
+
+    AUFGABE 16:
+    Einfach ein paar Tags und Bemerkungszeilen Falten (mit Ctrl+Shift+ß oder Ctrl+K Ctrl+L) und
+    entfalten (mit Ctrl+Shift+´ oder Ctrl+K Ctrl+L).
+
+    Alles falten mit Ctrl+K Ctrl+0 und entfalten mit Ctrl+K Ctrl+J (bitte merken da beim alles
+    falten diese Anleitung weg ist).
+-->
+
+    <div>
+        <ul class="menu">
+            <!-- Erste Menüeintrag
+            
+                Inhalte noch erstellen!!!
+            -->
+            <li id="menuitem1">
+                <p>Lebenslauf</p>
+                <img src="ll.jpg" alt="Lebenslaufvorlage">
+            </li>
+            <!-- Zweiter Menüeintrag
+            
+                Bilder noch organisieren!!!
+            -->
+            <li id="menuitem2">
+                <p>Bilder</p>
+                <img src="bilder.jpg" alt="Mehrere Bilder im Bilderrahmen">
+            </li>
+            <!-- Dritter Menüeintrag
+            
+                Ist soweit fertig
+            -->
+            <li id="menuitem3">
+                <p>Lustiges</p>
+                <img src="witze.jpg" alt="Lachende Zeichentrickfigur">
+            </li>
+            <!-- Vierter Menüeintrag
+
+            Zusammenfassung schreiben
+            Bilder einfügen
+            Zitate markieren
+            Pizza bestellen
+            Kinokarten bestellen
+            Zähne putzen
+             -->
+            <li id="menuitem4">
+                <p>Todo</p>
+                <img src="todo.jpg" alt="Klemmbrett">
+            </li>
+            <!-- Letzter Menüeintrag
+
+            Tue irgendwas
+            Subnetting
+            Bin
+            Hex
+            Dez -->
+            <li id="menuitem5">
+                <p>Alles mögliche</p>
+                <img src="alles.jpg" alt="Verschiedene Grafiken">
+            </li>
+        </ul>
+    </div>
+
+    <!--
+    --------------------------------------------------------------------------------------------
+    File: Compare Active File with Clipboard            Ctrl+K C
+    File: Compare Active File with Saved                Ctrl+K D
+    File: Compare Active File with...
+
+    File: Copy Path of Active File                      Shift+Alt+C
+    File: Copy Relative Path of Active File             Ctrl+K Ctrl+Shift+C
+
+    AUFGABE 17:
+    Markiere das komplette Dokument (Strg+A) und kopiere es in die Zwischenablage (Strg+C)
+    Ändere danach irgendwas in dem Dokument (an einer Stelle oder mehrere Stellen, viel oder
+    wenig)
+
+    Anschließend Ctrl+K C drücken. Das aktuelle Dokument wird mit dem Inhalt der Zwischenablage
+    verglichen und man kann sehr schnell sehen, wo etwas anders ist.
+
+    Dies funktioniert auch mit der gespeicherten und der geöffneten Version (Uunterschied von der
+    aktuellen Datei zur letzten gespeicherten) mit Ctrl+K D
+    Oder der Vergleich mit einer beliebigen Datei mit Befehl F1 >File: Compare Active File With...
+
+    AUFGABE 18:
+    Ctrl+Alt+C kopiert den Pfad der aktuellen Datei in die Zwischenablage.
+    Ctrl+K Ctrl+Shift+C (funktioniert evtl. nicht, dann den Befehl mit F1 auswählen) kopiert nur
+        den relativen Pfad bei einem geöffneten Ordner/Workspace (das, was z.B. als href="" für
+        a-Tags genutzt werden kann). 
+        
+    Kopiere den Pfad und relativen Pfad und füge diese unten ein.
+-->
+
+    Dateipfad:
+    Relativer Dateipfad:
+
+    <!--
+    --------------------------------------------------------------------------------------------
+    Go to File...                                       Ctrl+P
+    Live Server: Open with Live Server                  Alt+L Alt+O
+    VS Color Picker
+
+    Diese Befehl erlauben ein schnelles auswählen von Dateien (über den Namen oder Teilnamen wie
+    bei Befehlen, Intellisense). Ctrl+P öffnet den Dialog, diesmal ohne Prefix
+    > Befehlsname
+    : Zeile,Spalte
+    Dateiname
+
+    Alt+L Alt+O öffnet die aktuelle Seite mit dem Live Server (Extension)
+
+    Der Befehl F1 >VS Color Picker öffnet erlaubt die Farbauswahl, egal wo sich der Cursor befindet.
+    Dies funktioniert auch in "", oder anderen Stellen bei dem das Automatisch erscheinen der
+    Farbauswahl (Dialog, Pipette) nicht funktioniert.
+-->
+
+</body>
+
+</html>

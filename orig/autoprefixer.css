@@ -1,0 +1,18 @@
+/* 
+    Autoprefixer
+
+    Hier werden 2 Eigenschaften verwendet:
+    text-align-last
+    column-count
+
+    Diese gibt es für Mozila (Firefox) extra Eigenschaftsnamen (mit Prefix).
+
+    Um diese automatisch zu erstellen, den Autoprefixer aktivieren. Hierzu F1 drücken und
+    "Autoprefixer: Run" wählen (einfach "auto" eingeben und den Befehl wählen).
+    */
+
+.tabelle {
+    text-align-last: auto;
+
+    column-count: auto;
+}

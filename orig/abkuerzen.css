@@ -1,0 +1,30 @@
+/* 
+    Kurzschreibweise für Eigenschaftsnamen und Werte
+    
+    Erstelle in h1 { } folgende Eigenschaften:
+
+    color: #ff0000;
+    background-color: blue;
+    padding: 1em;
+    margin-left: 5px;
+    text-align: right;
+
+    Verwende möglicht wenige Zeichen um die Eigenschaften und Werte zu definieren. Also Beispiel
+
+    p1em            (dann Return drücken) ergibt
+    padding: 1em;
+ */
+
+h1 {
+    
+}
+
+/* In ul { } einfach etwas herum probieren. z.B.
+list-style-type: none;     */
+
+
+
+
+ul {
+    
+}

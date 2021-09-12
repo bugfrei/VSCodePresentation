@@ -1,0 +1,17 @@
+/* 
+    CSS Farben
+
+    Mit der Maus über die Farbangaben gehen und rumprobieren.
+ */
+
+.h1 {
+    color: rgba(17, 238, 194, 0.412);
+    background-color: rgba(162, 63, 63, 0.303);
+    
+    
+}
+
+.h2 {
+    color: rgb(13, 82, 128);
+    background-color: rgba(0, 0, 255, 0.576);
+}

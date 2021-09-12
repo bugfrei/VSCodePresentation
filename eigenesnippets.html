@@ -1,0 +1,61 @@
+<!--
+    Eigene Snippets
+
+    File -> Preferences -> User Snippets
+    (HTML) wählen
+
+    div.bilder inkl. der Bilder ...01 bis ...03 als Snippet erstellen
+    (Tipp: Hier im Dokument alle Zeilenumbrücke durch \r\n (\n geht auch) ersetzen, so das alles in einer Zeile steht)
+    (Leerzeichen sind nicht nötig, da VS Code den Code formatiert)
+    (Tipp: Multi-Cursor (Strg+Alt+Cursor h/r) nutzen für Tab-Entfernen und \r\n einfügen)
+    (Tipp: Um alle " in \" umzuwandeln, das erste " markieren und die anderen mit Strg+D)
+    (Tipp: Nach dem einfügen des Snippets Alt+Shift+F zum Formatieren)
+
+    "SnippetName": {
+		"prefix": "Snippet_Kurztext",
+		"body": "SnippetTexte\r\nFuerMehrere\r\nZeilen",
+		"description": "Beschreibung"
+    },
+
+    oder body als Array
+
+    "SnippetName": {
+		"prefix": "Snippet_Kurztext",
+        "body": [
+            "SnippetTexte",
+            "FuerMehrere", 
+            "Zeilen"
+            ],
+		"description": "Beschreibung"
+    },
+    
+    Platzhalter:
+        $1...$9             Platzhalterposition (Mehrfachverwendung möglich und "cool" ;-) )
+        ${1:Default}        Platzhalterposition mit Default-Wert (Mehrf.verw. möglich...)
+        ${1|El1,El2,El3|}   Platzhalterposition mit Auswahlmöglichkeiten
+        ${TM_SELECTED_TEXT} Zum Zeitpunkt des Snippet-einfügen markierter Text; Snippet mit F1: >Insert Snippet    einfügen
+
+    TIPP: Am Ende (entgültige Cursorposition) mit $0 markieren (ggfs. neue Zeile)
+-->
+<!DOCTYPE html>
+<html lang="de">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="bilder">
+        <img src="bild01.jpg" alt="Bild Nr. 1: ">
+        <img src="bild02.jpg" alt="Bild Nr. 2: ">
+        <img src="bild03.jpg" alt="Bild Nr. 3: ">
+    </div>
+
+
+</body>
+
+</html>
